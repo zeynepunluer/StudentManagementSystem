@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Bilgileri</title>
+    <link rel="stylesheet" href="studentstyle.css">
+    <script src="Student.js" ></script>
+</head>
+<body>
+
+  <div class="container">
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>    <!-- Home page link -->
+          <li><a href="Student.html">Student Management</a></li>     <!-- Student management page link -->
+          <li><a href="CourseManagement.html">Course Management</a></li>      <!-- Course management page link -->
+      
+        </ul>
+      </nav>
+      <button class="sidebar-toggle">
+        <span>&#9776;</span> <!-- Sidebar opening button-->
+      </button>
+    </aside>
+    
+
+
+  <div id="addStudent">              <!-- Form for entering student information -->
+    <h2>Student Information</h2>
+
+    <label for="studentId">ID:</label>
+    <input type="text" id="studentId" placeholder="Student ID">
+
+    <label for="studentName">First Name:</label>
+    <input type="text" id="studentName" placeholder="First Name">
+
+    <label for="studentSurname">Last Name:</label>
+    <input type="text" id="studentSurname" placeholder="Last Name">
+
+    <label for="midtermGrade">Midterm:</label>
+    <input type="text" id="midtermGrade" placeholder="Midterm Grade">
+
+    <label for="finalGrade">Final:</label>
+    <input type="text" id="finalGrade" placeholder="Final Grade">
+
+    <label for="courseSelection">Select Course:</label>
+    <select id="courseSelection"></select>
+
+    <button id="addStudentButton">Add Student</button>
+
+  </div>
+
+  <div id="listStudents">    <!-- Here is the table for student list and grades -->
+    <h2>Student List</h2>
+    <input type="text" id="studentNameFilter" placeholder="Filter Students">
+    <input type="text" id="courseNameFilter" placeholder="Filter Courses">
+  <table id="studentTable" border="1">
+    <thead>
+      <tr>
+        <th>Student ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Course ID</th>
+        <th>Course Name</th>
+        <th>Credit</th>
+        <th>Grading Scale</th>
+        <th>Midterm</th>
+        <th>Final</th>
+        <th>Mean Score</th>
+        <th>Letter Grade</th>
+        <th>State</th>
+        <th>GPA</th>
+        <th>Update Grades</th>
+        <th>Update Student Info</th>
+        <th>Delete</th>    
+      </tr>
+    </thead>
+    <tbody id="studentTableBody"></tbody>
+  </table>
+  <div id="classAverageDisplay">
+    Mean Score: <span id="classAverageValue"></span>       <!-- This part is for displaying average score -->
+  </div>
+  <h2>Passed Students</h2>         <!-- Table for passed students -->
+  <span>Number of Passed Students: <span id="passedStudentCount"></span></span>
+<table id="passedStudentsTable" border="1">
+  <tbody id="passedStudentsTableBody">
+  </tbody>
+</table>
+
+<h2>Failed Students</h2>                       <!-- Table for failed students -->
+<span>Number of Failed Students: <span id="failedStudentCount"></span></span>
+<table id="failedStudentsTable" border="1">
+  <tbody id="failedStudentsTableBody">
+   
+  </tbody>
+</table>
+ 
+</div>
+ </div>
+
+
+</body>
+</html>

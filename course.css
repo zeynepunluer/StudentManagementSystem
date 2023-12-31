@@ -1,0 +1,184 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {   /* Default closed side bar width */
+  width: 20vw;
+  overflow: hidden; 
+  transition: width 0.3s ease;   /* Adding width transition effect */
+  position: relative; 
+  z-index: 1; 
+}
+
+.sidebar ul {
+  list-style: none;   /* removing default list styles for sidebar unordered lists*/
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;   /* removing default underline on links */
+  color: black;
+}
+
+
+.sidebar.collapsed {
+  width: 70px;    /* Setting width for collapsed sidebar */
+}
+
+.sidebar.collapsed ul li {   /* Hiding list items when sidebar is collapsed */
+  display: none;
+}
+
+.sidebar-toggle {   /* sidebar toggle button styling */
+  display: block;
+}
+
+
+.sidebar-toggle span {     /* styling for elements within the sidebar toggle */
+  display: block;
+}
+
+
+.sidebar nav {   /* Styling for sidebar navigation */
+  width: 100%; 
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  padding: 10px;
+}
+
+.sidebar nav a {
+  text-decoration: none;
+  color: #AFC8AD !important;
+}
+
+
+h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#addCourse,
+#updateCourseForm,
+#deleteCourseForm {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  position: relative;
+}
+
+h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type='text'],    /* Styling for text inputs */
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background-color: #AC87C5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;    /* to change mouse icon when it is on a clickable item*/
+  transition: all 0.3s ease;       /* adding transition */
+}
+
+button:hover {     /* Hover effect for buttons */
+  transform: scale(1.1);         /* setting button size */
+  background-color: #AC87C5;        /* Changing background color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);          /* Adding box shadow on hover */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+
+@media screen and (max-width: 768px) {  /* Styling adjustments for smaller screens */
+  .sidebar {
+    width: 70px;
+    overflow: visible;
+  }
+
+  .sidebar ul li {
+    display: none;
+  }
+
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .sidebar.collapsed {
+    width: 70px;
+  }
+
+  .sidebar.collapsed ul li {
+    display: block;
+  }
+  .sidebar nav a {
+    font-size: 9px; 
+  }
+
+  input[type='text'],     
+  select {
+    width: 100%;
+  }
+  
+  table {
+    overflow-x: auto;
+    display: block;
+  }
+}

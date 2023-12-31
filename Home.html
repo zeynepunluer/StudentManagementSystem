@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website</title>
+  <link rel="stylesheet" href="Home.css"> 
+</head>
+<body>
+
+<header>
+  <h1>Student Management System</h1>
+</header>
+
+<div class="container">
+  <aside class="sidebar">
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>           
+        <li><a href="Student.html">Student Management</a></li>        <!-- Links for pages -->
+        <li><a href="CourseManagement.html">Course Management</a></li>
+        
+      </ul>
+    </nav>
+    <button class="sidebar-toggle">    <!-- Sidebar opening button-->
+      <span>&#9776;</span> <!-- Button icon -->
+    </button>
+  </aside>
+
+  <main class="main-content">
+    <div class="welcome-block">
+      <p>Welcome back, admin!</p>
+    </div>
+
+    <div class="block-container">
+      <a href="Student.html" class="block student-block">  <!-- Block for student management. When clicked, it guides the user to Student.html -->
+        <img src="./images/student.png" alt="Student Image">     
+      </a>
+
+      <a href="CourseManagement.html" class="block course-block">  <!-- Block for course management. When clicked, it guides the user to CourseManagement.html -->
+        <img src="./images/course.png" alt="Course Image">       
+      </a>
+    </div>
+    <br>
+    <div class="hometitle">          
+      <h1 style="text-align: center">Calendar</h1>    <!-- Title for the calendar -->
+    </div>
+
+    <div class="calendar-block">
+      <img src="./images/calendar.png" alt="Calendar Image">  <!-- this is for the calendar image -->
+    </div>
+  </main>
+</div>
+
+<script src="Home.js"></script>        
+</body>
+</html>
