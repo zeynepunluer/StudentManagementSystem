@@ -2,7 +2,7 @@
 
 
 # https://github.com/zeynepunluer/WebFinalProject
-# https://zeynepunluer.github.io/WebFinalProject/
+#  https://zeynepunluer.github.io/WebFinalProject/Home.html
 
 ### This is a Student Management System using HTML, CSS and JS. There are 3 HTML pages, Javascript and CSS files for each HTML page simply. 
 
