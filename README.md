@@ -1,5 +1,8 @@
 <h1> Student Management System</h1>
 
+
+#https://github.com/zeynepunluer/WebFinalProject
+# https://zeynepunluer.github.io/WebFinalProject/
 ### This is a Student Management System using HTML, CSS and JS. There are 3 HTML pages, Javascript and CSS files for each HTML page simply. 
 
 Home page contains links for other HTML pages (in the sidebar and in the main context) so you can visit them. And there is course management page which you can add, update and delete courses. You can see all the changes you make in the course table as well. Finally, there is student management page. In this page, user can add students to classes, see the enrollments in the student table, filter student and courses from this table. This table contains student info, course info grades and gpa. User can delete any row, update information about student and grades. Also there are two more tables bottom of the student table which are for showing passed and failed students. Additionally, when filtering based on certain course the user can see mean score of students in that class.
